@@ -1,0 +1,93 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 150px;
+    height: 225px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.top, .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.center {
+    font-size: 100px;
+    color: black;
+}
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="top">
+                <div>A</div>
+                <div>&spades;</div>
+            </div>
+            <div class="center">&spades;</div>
+            <div class="bottom">
+                <div>A</div>
+                <div>&spades;</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+.card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    width: 150px;
+    height: 225px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.middle {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    font-size: 25px;
+}
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div>6</div>
+                <div>&clubs;</div>
+            </div>
+            <div class="middle">
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+                <div>&clubs;</div>
+            </div>
+            <div class="right">
+                <div>6</div>
+                <div>&clubs;</div>
+            </div>
+        </div>
+    </div>
+</body>
