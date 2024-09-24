@@ -1,3 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace of Spades</title>
+    <style>
+        
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .card {
+        width: 120px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .card .top, .card .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 80px;
+    }
+
+    </style>
+</head>
 <body>
     <div class="container">
         <div class="card">
@@ -13,3 +71,4 @@
         </div>
     </div>
 </body>
+</html>

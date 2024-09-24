@@ -45,7 +45,7 @@ Task 4: Playing cards (40%)
 Hint: you have to use flex and grid for this task. Also think of transformations in CSS.
 Keep the width of the cards 2/3 of their heights
 Create the following cards try to match the design as closely as possible:
- 
+
 Here are the HTML that you will need
 Ace of Spades
 <body>
