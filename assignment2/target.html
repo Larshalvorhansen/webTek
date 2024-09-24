@@ -1,31 +1,70 @@
-.target {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    background-color: #FFD700;
-    border-radius: 50%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target</title>
+    <style>
+        .target {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 275px;
+            width: 275px;
+            background-color: #040528;
+            border-radius: 50%;
+        }
 
-.inner-circle {
-    height: 200px;
-    width: 200px;
-    background-color: #FF6347;
-    border-radius: 50%;
-}
+        .first-inner-circle {
+            display: flex;
+            height: 225px;
+            width: 225px;
+            justify-content: center;
+            align-items: center;
+            background-color: #210336;
+            border-radius: 50%;
+        }
 
-.core {
-    height: 100px;
-    width: 100px;
-    background-color: #4682B4;
-    border-radius: 50%;
-}
+        .second-inner-circle {
+            display: flex;
+            height: 175px;
+            width: 175px;
+            justify-content: center;
+            align-items: center;
+            background-color: #da430c;
+            border-radius: 50%;
+        }
+
+        .third-inner-circle {
+            display: flex;
+            height: 125px;
+            width: 125px;
+            justify-content: center;
+            align-items: center;
+            background-color: #210336;
+            border-radius: 50%;
+        }
+
+        .core {
+            display: flex;
+            height: 75px;
+            width: 75px;
+            justify-content: center;
+            align-items: center;
+            background-color: #ff0000;
+            border-radius: 50%;
+        }
+    </style>
+</head>
 
 <body>
     <div class="target">
-        <div class="inner-circle">
-            <div class="core"></div>
+        <div class="first-inner-circle">
+            <div class="second-inner-circle">
+                <div class="third-inner-circle">
+                    <div class="core"></div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
