@@ -35,15 +35,29 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 10px;
-        font-size: 20px;
+        padding: 6px;
+        font-size: 15px;
         font-family: sans-serif;
     }
 
-    .card .top, .card .bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .card .top {
+        width: 20px;
+        height: 40px;
+
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+
+    .card .bottom {
+        width: 20px;
+        height: 40px;
+        position: relative;
+        left: 84px;
+        flex-direction: column;
+        text-align: center;
+        rotate: 180deg;
     }
 
     .card .center {
@@ -51,7 +65,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        font-size: 80px;
+        font-size: 40px;
     }
 
     </style>
@@ -65,7 +79,7 @@
             </div>
             <div class="center">&spades;</div>
             <div class="bottom">
-                <div>A</div>
+                <div>  A</div>
                 <div>&spades;</div>
             </div>
         </div>
