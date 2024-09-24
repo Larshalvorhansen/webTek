@@ -1,31 +1,51 @@
-.progress-bar {
-    width: 100%;
-    background-color: lightgrey;
-    height: 30px;
-    border-radius: 10px;
-    overflow: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        .progress-bar {
+            width: 100%;
+            background-color: lightgrey;
+            height: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
 
-.stage1 {
-    width: 33%;
-    background-color: green;
-    height: 100%;
-}
+        .fill {
+            height: 100%;
+            transition: width 0.3s ease; /* Smooth transition */
+            border-radius: 10px;
+        }
 
-.stage2 {
-    width: 67%;
-    background-color: orange;
-    height: 100%;
-}
+        /* Colors for each stage */
+        .stage1 {
+            background-color: green;
+        }
 
-.stage3 {
-    width: 100%;
-    background-color: red;
-    height: 100%;
-}
+        .stage2 {
+            background-color: orange;
+        }
 
+        .stage3 {
+            background-color: red;
+        }
+    </style>
+</head>
 <body>
     <div class="progress-bar">
-        <div class="stage1"></div> <!-- Change class for different stages -->
+        <div class="fill stage1" style="width: 25%;"></div> <!-- Change the width for different stages -->
     </div>
+    <br>
+    <div class="progress-bar">
+        <div class="fill stage2" style="width: 70%;"></div> <!-- Change the width for different stages -->
+    </div>
+    <br>
+    <div class="progress-bar">
+        <div class="fill stage3" style="width: 98%;"></div> <!-- Change the width for different stages -->
+    </div>
+    <br>
 </body>
+</html>
