@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Kitchen Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F5F5DC;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #556B2F;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+
+        .feature-item {
+            flex: 1 1 calc(33.33% - 20px); /* 3 items per row for large screens */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            background-color: #B2BEB5;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .feature-item img {
+            max-width: 100%;
+            height: auto; /* Ensures image scales properly */
+            border-radius: 5px;
+        }
+
+        .feature-item h3 {
+            margin: 10px 0;
+        }
+
+        /* Media Queries */
+        /* Large screens (default), 3 items per row */
+        @media screen and (max-width: 1200px) {
+            .feature-item {
+                flex: 1 1 calc(50% - 20px); /* 2 items per row */
+            }
+        }
+
+        /* Medium screens */
+        @media screen and (max-width: 1024px) {
+            .feature-item {
+                flex: 1 1 calc(50% - 20px); /* 2 items per row */
+            }
+        }
+
+        /* Tablets */
+        @media screen and (max-width: 992px) {
+            .feature-item {
+                flex: 1 1 calc(50% - 20px); /* 2 items per row */
+            }
+        }
+
+        /* Large phones */
+        @media screen and (max-width: 768px) {
+            .feature-item {
+                flex: 1 1 100%; /* 1 item per row */
+            }
+        }
+
+        /* Small phones */
+        @media screen and (max-width: 480px) {
+            .feature-item {
+                flex: 1 1 100%; /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Our Kitchen Features</h1>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <img src="kitchen1.jpeg" alt="Feature 1">
+            <h3>Modern Design</h3>
+            <p>Our kitchens feature modern, sleek designs to suit any home.</p>
+        </div>
+        <div class="feature-item">
+            <img src="kitchen2.jpeg" alt="Feature 2">
+            <h3>High Quality Materials</h3>
+            <p>We use the highest quality materials for durability and aesthetics.</p>
+        </div>
+        <div class="feature-item">
+            <img src="kitchen3.jpg" alt="Feature 3">
+            <h3>Customizable Layout</h3>
+            <p>Design the kitchen that fits your lifestyle with our customizable options.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

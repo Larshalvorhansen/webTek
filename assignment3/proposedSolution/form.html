@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #c9c9c9;
+        }
+
+        .form-container {
+            max-width: 650px;
+            margin: auto;
+            background: #f3ecb8;
+            padding: 20px;
+            border: 10px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #555;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Registration</h2>
+        <form action="#" method="POST">
+            <!-- Name -->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Birthdate:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Country -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="norway">Norway</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <!-- Gender -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+
+            <!-- Interests -->
+            <p>Interests:</p>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="traveling" name="interests" value="traveling">
+            <label for="traveling">Traveling</label>
+
+            <!-- Comments -->
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <!-- Satisfaction Slider -->
+            <label for="satisfaction">Satisfaction Level (1-10):</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+
+            <!-- File Upload -->
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" name="profile-pic">
+
+            <!-- Submit and Reset Buttons -->
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
