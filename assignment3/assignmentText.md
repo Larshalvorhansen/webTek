@@ -35,7 +35,7 @@ You are required to create a complete HTML5 form for an imaginary website. The f
   - Add `minlength` and `maxlength` attributes where necessary (e.g., password length).
     - [x] add max length
   - [x] Use the `min` and `max` attributes to ensure that the birthdate makes the user at least 18 years old.
-  - [ ] For checkboxes and radio buttons ensure at least one option is selected.
+  - [x] For checkboxes and radio buttons ensure at least one option is selected.
 
 - **Form Styling**:
   - Apply basic CSS styles to make your form look visually appealing. Consider layout, spacing, font sizes, colors, and alignment.

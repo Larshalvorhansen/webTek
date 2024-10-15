@@ -44,6 +44,14 @@
         input[type="submit"]:hover, input[type="reset"]:hover {
             background-color: #555;
         }
+        
+        input[type="checkbox"]:checked+label{
+            font-weight: bold; 
+            
+
+        }
+
+       
 
         mark.red {
         color:#ff0000;
@@ -91,7 +99,7 @@
 
             <!-- Gender -->
             <p>Gender: <mark class="red">*</mark></p>
-            <input type="radio" id="male" name="gender" value="male">
+            <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
@@ -101,11 +109,13 @@
             <!-- Interests -->
             <p>Interests: <mark class="red">*</mark></p>
             <input type="checkbox" id="sports" name="interests" value="sports">
-            <label for="sports">Sports</label><br>
+            <label for="sports" required >Sports</label><br>
             <input type="checkbox" id="reading" name="interests" value="reading">
             <label for="reading">Reading</label><br>
             <input type="checkbox" id="traveling" name="interests" value="traveling">
             <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="none" name="none" value="none" required>
+            <label for="none">Other or none</label><br>
 
             <!-- Comments -->
             <label for="comments">Comments:</label>
