@@ -41,14 +41,14 @@ You are required to create a complete HTML5 form for an imaginary website. The f
   - Apply basic CSS styles to make your form look visually appealing. Consider layout, spacing, font sizes, colors, and alignment.
   - Ensure the form is responsive and looks good on various screen sizes (desktop, tablet, and mobile).
 
-## Task 2: Responsiveness (40%)
+#### Task 2: Responsiveness (40%)
 
 There is an `template.html` file. It shows the basic layout of a webpage. Consider this as a template for a webpage for selling kitchens. Add images and text for Features and their descriptions (you can use online resources). Once you are done with making the basic HTML and CSS work, the real task begins:
 
 - **Media Queries**:
-  - [ ] Add the media queries to ensure that the website adjusts properly for smaller (than desktop) screen sizes. Pick five small screen sizes and make sure the website is properly adjusted.
-  - [ ] Ensure the image scales properly.
-  - [ ] Use Flexbox to manage the layout of the feature items in the `.features` section and ensure they stack vertically on smaller screens.
+  - [x] Add the media queries to ensure that the website adjusts properly for smaller (than desktop) screen sizes. Pick five small screen sizes and make sure the website is properly adjusted.
+  - [x] Ensure the image scales properly.
+  - [x] Use Flexbox to manage the layout of the feature items in the `.features` section and ensure they stack vertically on smaller screens.
 
 ## Submission
 
