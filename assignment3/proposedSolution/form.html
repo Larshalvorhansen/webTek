@@ -45,6 +45,11 @@
             background-color: #555;
         }
 
+        mark.red {
+        color:#ff0000;
+        background: none;
+        }
+
         
     </style>
 </head>
@@ -53,22 +58,22 @@
         <h2>User Registration</h2>
         <form action="#" method="POST">
             <!-- Name -->
-            <label for="fname">First Name: *</label>
+            <label for="fname">First Name: <mark class="red">*</mark></label>
             <input type="text" id="fname" name="fname" required>
 
-            <label for="lname">Last Name: *</label>
+            <label for="lname">Last Name: <mark class="red">*</mark></label>
             <input type="text" id="lname" name="lname" required>
 
             <!-- Email -->
-            <label for="email">Email: *</label>
+            <label for="email">Email: <mark class="red">*</mark></label>
             <input type="email" id="email" name="email" required>
 
             <!-- Password -->
-            <label for="password">Password: *</label>
+            <label for="password">Password: <mark class="red">*</mark></label>
             <input type="password" id="password" name="password" minlength="8" required>
 
             <!-- Phone Number -->
-            <label for="phone">Phone Number: *</label>
+            <label for="phone">Phone Number: <mark class="red">*</mark></label>
             <input type="tel" id="phone" name="phone" required>
 
             <!-- Date of Birth -->
@@ -84,7 +89,7 @@
             </select>
 
             <!-- Gender -->
-            <p>Gender: * </p>
+            <p>Gender: <mark class="red">*</mark></p>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
@@ -93,7 +98,7 @@
             <label for="other">Other</label>
 
             <!-- Interests -->
-            <p>Interests:</p>
+            <p>Interests: <mark class="red">*</mark></p>
             <input type="checkbox" id="sports" name="interests" value="sports">
             <label for="sports">Sports</label><br>
             <input type="checkbox" id="reading" name="interests" value="reading">
