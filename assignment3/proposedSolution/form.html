@@ -26,7 +26,7 @@
         }
 
         input[type="text"], input[type="email"], input[type="password"], input[type="tel"], select, textarea {
-            width: 100%;
+            width: 90%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ddd;
@@ -59,26 +59,26 @@
         <form action="#" method="POST">
             <!-- Name -->
             <label for="fname">First Name: <mark class="red">*</mark></label>
-            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="fname" name="fname" required><br>
 
             <label for="lname">Last Name: <mark class="red">*</mark></label>
-            <input type="text" id="lname" name="lname" required>
+            <input type="text" id="lname" name="lname" required><br>
 
             <!-- Email -->
             <label for="email">Email: <mark class="red">*</mark></label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required><br>
 
             <!-- Password -->
             <label for="password">Password: <mark class="red">*</mark></label>
-            <input type="password" id="password" name="password" minlength="8" required>
+            <input type="password" id="password" name="password" minlength="8" required><br>
 
             <!-- Phone Number -->
             <label for="phone">Phone Number: <mark class="red">*</mark></label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required><br>
 
             <!-- Date of Birth -->
             <label for="dob">Birthdate: </label>
-            <input type="date" id="dob" name="dob">
+            <input type="date" id="dob" name="dob"><br>
 
             <!-- Country -->
             <label for="country">Country: </label>
@@ -86,7 +86,7 @@
                 <option value="norway">Norway</option>
                 <option value="usa">USA</option>
                 <option value="canada">Canada</option>
-            </select>
+            </select><br>
 
             <!-- Gender -->
             <p>Gender: <mark class="red">*</mark></p>
@@ -95,7 +95,7 @@
             <input type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
             <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
+            <label for="other">Other</label><br>
 
             <!-- Interests -->
             <p>Interests: <mark class="red">*</mark></p>
@@ -104,24 +104,25 @@
             <input type="checkbox" id="reading" name="interests" value="reading">
             <label for="reading">Reading</label><br>
             <input type="checkbox" id="traveling" name="interests" value="traveling">
-            <label for="traveling">Traveling</label>
+            <label for="traveling">Traveling</label><br>
 
             <!-- Comments -->
             <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments"></textarea>
+            <textarea id="comments" name="comments"></textarea><br>
 
             <!-- Satisfaction Slider -->
             <label for="satisfaction">Satisfaction Level (1-10):</label>
-            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br>
 
             <!-- File Upload -->
             <label for="profile-pic">Profile Picture:</label>
-            <input type="file" id="profile-pic" name="profile-pic">
+            <input type="file" id="profile-pic" name="profile-pic"><br>
 
             <!-- Submit and Reset Buttons -->
             <br><br>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
+            <p> All fields marked with <mark class="red">*</mark> are required</p>
         </form>
     </div>
 </body>
