@@ -33,8 +33,8 @@ You are required to create a complete HTML5 form for an imaginary website. The f
 - **Input Validation**:
   - Use HTML5 input attributes and pattern to enforce correct formatting for email and phone number inputs.
   - Add `minlength` and `maxlength` attributes where necessary (e.g., password length).
-    - [ ] add max length
-  - [ ] Use the `min` and `max` attributes to ensure that the birthdate makes the user at least 18 years old.
+    - [x] add max length
+  - [x] Use the `min` and `max` attributes to ensure that the birthdate makes the user at least 18 years old.
   - [ ] For checkboxes and radio buttons ensure at least one option is selected.
 
 - **Form Styling**:
