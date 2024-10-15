@@ -27,8 +27,8 @@ You are required to create a complete HTML5 form for an imaginary website. The f
 
 - **HTML5 Validation**
   - Ensure that appropriate fields (name, email, password, phone number) are marked as required using the `required` attribute.
-  - [ ] add kommentar nederst for *
-  - [ ] gjør stjerne rød
+  - [x] add kommentar nederst for *
+  - [x] gjør stjerne rød
 
 - **Input Validation**:
   - Use HTML5 input attributes and pattern to enforce correct formatting for email and phone number inputs.
