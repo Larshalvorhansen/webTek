@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <style>
+      /* Basic styles for the to-do list */
+      #task-list {
+        list-style-type: none; /* Removes list bullets */
+        padding: 0;
+      }
+      .completed {
+        text-decoration: line-through;
+        color: grey;
+      }
+      #task-counter {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>To-Do List</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter a new task" required>
+      <input type="submit" id="add-button" value="Add">
+    </form>
+    
+    <div id="task-counter">0/0 completed</div>
+    <ul id="task-list"></ul>
+
+    <!-- Link to JavaScript file -->
+    <script src="todo.js"></script>
+  </body>
+</html>
