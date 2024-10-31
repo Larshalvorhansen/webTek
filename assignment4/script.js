@@ -55,7 +55,8 @@ const technologies = [
 ];
 
 for (tech in technologies){
-    document.getElementById("tech").append(technologies[tech]);
-    document.getElementById("tech").append()
+    var node = document.createElement('li');
+    node.appendChild(document.createTextNode(technologies[tech]))
+    document.getElementById('tech').appendChild(node);
 }
 
